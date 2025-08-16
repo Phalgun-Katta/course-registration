@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Course Registration System</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f7f7f7;
+    }
+    header {
+      background-color: #343a40;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+      border-radius: 8px;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, select, button {
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    footer {
+      text-align: center;
+      margin: 2rem auto;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Course Registration System</h1>
+  </header>
+  <main>
+    <h2>Register for a Course</h2>
+    <form>
+      <label for="studentName">Student Name:</label>
+      <input type="text" id="studentName" name="studentName" required />
+
+      <label for="rollNo">Roll Number:</label>
+      <input type="text" id="rollNo" name="rollNo" required />
+
+      <label for="course">Select Course:</label>
+      <select id="course" name="course" required>
+        <option value="">-- Choose a Course --</option>
+        <option value="cs101">CS101 - Data Structures</option>
+        <option value="cs102">CS102 - Algorithms</option>
+        <option value="cs103">CS103 - Operating Systems</option>
+        <option value="cs104">CS104 - Databases</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+  <footer>
+    &copy; 2025 Course Registration Project
+  </footer>
+</body>
+</html>
